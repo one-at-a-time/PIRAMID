@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="border-box">
+        <h1>P-I-R-A-M-I-D</h1>
+    </div>
+
+    <!-- <p>This is a simple front-end page served by Flask.</p> -->
+    <p>Add an user by visiting: <code>/add_user/&lt;username&gt;</code></p>
+    <p>Remove an user by visiting: <code>/remove_user/&lt;username&gt;</code></p>
+    <p>Edit an username by visiting: <code>/modify_user/&lt;current_username&gt;/&lt;new_username&gt;</code></p>
+    <p>
+        Enrolled Users (<a href="/users" target="_blank">list view</a> / <a href="/users_json" target="_blank">json view</a>)
+    </p>
+</body>
+</html>
